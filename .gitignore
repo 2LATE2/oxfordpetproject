@@ -1,0 +1,5 @@
+data/oxford-iiit-pet/
+results/*.pt
+__pycache__/
+*.pyc
+.env
