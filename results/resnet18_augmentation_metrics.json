@@ -1,0 +1,33 @@
+{
+  "model": "resnet18",
+  "hf_checkpoint": "hf-hub:timm/resnet18.tv_in1k",
+  "condition": "augmentation",
+  "split": "val",
+  "epochs": 10,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "egyptian_mau_recall_mean": 0.7833333333333332,
+  "egyptian_mau_recall_std": 0.07637626158259735,
+  "macro_f1_mean": 0.8745475495902205,
+  "macro_f1_std": 0.02622342625605992,
+  "per_seed": [
+    {
+      "seed": 0,
+      "egyptian_mau_recall": 0.85,
+      "macro_f1": 0.8928093274932171
+    },
+    {
+      "seed": 1,
+      "egyptian_mau_recall": 0.8,
+      "macro_f1": 0.8863343250751079
+    },
+    {
+      "seed": 2,
+      "egyptian_mau_recall": 0.7,
+      "macro_f1": 0.8444989962023366
+    }
+  ]
+}

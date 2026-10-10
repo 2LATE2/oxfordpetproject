@@ -1,0 +1,9 @@
+breed,train,val,test,unused,dropped
+Abyssinian,70,20,30,74,6
+Bengal,70,20,30,80,0
+Birman,70,20,30,79,1
+Bombay,70,20,30,56,24
+Egyptian_Mau,15,20,30,127,8
+Ragdoll,70,20,30,79,1
+Russian_Blue,70,20,30,80,0
+Siamese,70,20,30,79,1

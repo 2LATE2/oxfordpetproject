@@ -1,0 +1,33 @@
+{
+  "model": "efficientnet_b0",
+  "hf_checkpoint": "hf-hub:timm/efficientnet_b0.ra_in1k",
+  "condition": "imbalanced",
+  "split": "val",
+  "epochs": 10,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "egyptian_mau_recall_mean": 0.5333333333333333,
+  "egyptian_mau_recall_std": 0.028867513459481315,
+  "macro_f1_mean": 0.8304215857923043,
+  "macro_f1_std": 0.009644704465982206,
+  "per_seed": [
+    {
+      "seed": 0,
+      "egyptian_mau_recall": 0.55,
+      "macro_f1": 0.8411577800342679
+    },
+    {
+      "seed": 1,
+      "egyptian_mau_recall": 0.5,
+      "macro_f1": 0.8276168700583303
+    },
+    {
+      "seed": 2,
+      "egyptian_mau_recall": 0.55,
+      "macro_f1": 0.8224901072843147
+    }
+  ]
+}

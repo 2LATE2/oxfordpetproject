@@ -50,10 +50,13 @@ class PetDataset(Dataset):
     def __len__(self):
         return len(self.rows)
 
-    def __getitem__(self, idx):
+    def load(self, idx):
         row = self.rows.iloc[idx]
         img = Image.open(self.images_dir / row["image_id"]).convert("RGB")
-        label = CLASS_TO_IDX[row["breed"]]
+        return img, CLASS_TO_IDX[row["breed"]]
+
+    def __getitem__(self, idx):
+        img, label = self.load(idx)
         return self.transform(img), label
 
 
